@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Hanzla — Data Scientist, ML Engineer & Kaggle Expert. BS Software Engineering." />
+  <title>Muhammad Hanzla | Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-box">MH</span>
+        <span class="logo-text">Muhammad Hanzla</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"     class="nav-link active">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="container">
+      <div class="hero-grid">
+
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for Opportunities
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm<br />
+            <span class="hero-name">Muhammad<br />Hanzla</span>
+          </h1>
+          <div class="hero-subtitle">
+            <span class="typing-prefix">I'm a </span>
+            <span class="typing-text" id="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-desc">
+            BS Software Engineering student &amp; Data Scientist who transforms raw data
+            into powerful insights. Specialising in ML, Deep Learning &amp; Data
+            Visualization — turning complex problems into elegant, data-driven solutions.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-row">
+                <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-row">
+                <span class="stat-num" data-target="15">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Notebooks</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-row">
+                <span class="stat-num" data-target="18">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Tech Skills</span>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View Projects
+            </a>
+            <a href="assets/cv/Muhammad_Hanzla_CV.pdf" class="btn btn-outline" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" rel="noopener" class="social-link" aria-label="Kaggle">
+              <i class="fab fa-kaggle"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-hanzla-17a79237a/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-img-container">
+            <!-- <div class="img-placeholder">
+              <div class="img-initials">MH</div>
+            </div> -->
+            <img src="assets/images/profile.png" alt="Muhammad Hanzla" class="profile-photo" /> 
+            <div class="float-card float-card--tl">
+              <i class="fas fa-brain float-icon"></i>
+              <span>ML Expert</span>
+            </div>
+            <div class="float-card float-card--br">
+              <i class="fab fa-python float-icon"></i>
+              <span>Python Dev</span>
+            </div>
+            <div class="float-card float-card--tr">
+              <i class="fab fa-kaggle float-icon" style="color:#20BEFF;font-size:1.3rem;"></i>
+              <div>
+                <div style="font-size:.7rem;font-weight:700;line-height:1.2;">Kaggle</div>
+                <div style="font-size:.65rem;color:#64748b;line-height:1.2;">Expert</div>
+              </div>
+            </div>
+          </div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+        </div>
+
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get to Know Me</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate about transforming data into actionable insights and building intelligent systems.</p>
+      </div>
+      <div class="about-grid">
+
+        <!-- Left: Info Card -->
+        <div class="about-card reveal">
+          <div class="about-avatar">MH
+            <!-- Swap text "MH" with: <img src="assets/images/profile.jpg" alt="Muhammad Hanzla"> -->
+          </div>
+          <div class="about-card-name">Muhammad Hanzla</div>
+          <div class="about-card-role">Data Scientist &amp; ML Engineer</div>
+
+          <ul class="about-info-list">
+            <li class="about-info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <div class="about-info-label">Degree</div>
+                <div class="about-info-value">BS Software Engineering</div>
+              </div>
+            </li>
+            <li class="about-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <div class="about-info-label">Location</div>
+                <div class="about-info-value">Pakistan 🇵🇰</div>
+              </div>
+            </li>
+            <li class="about-info-item">
+              <i class="fab fa-kaggle"></i>
+              <div>
+                <div class="about-info-label">Kaggle</div>
+                <div class="about-info-value">Notebook Expert</div>
+              </div>
+            </li>
+            <li class="about-info-item">
+              <i class="fas fa-code"></i>
+              <div>
+                <div class="about-info-label">Focus</div>
+                <div class="about-info-value">ML · Deep Learning · Data Viz</div>
+              </div>
+            </li>
+            <li class="about-info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <div class="about-info-label">Email</div>
+                <div class="about-info-value">your@email.com</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="about-card-cta">
+            <a href="assets/cv/Muhammad_Hanzla_CV.pdf" class="btn btn-primary btn-sm" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="#contact" class="btn btn-outline btn-sm">
+              <i class="fas fa-paper-plane"></i> Hire Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Text Content -->
+        <div class="about-text-block">
+
+          <div class="reveal">
+            <h3 class="about-heading">Turning Data Into <span>Decisions</span></h3>
+            <p class="about-para">
+              I'm Muhammad Hanzla, a Data Scientist and BS Software Engineering student with a deep passion
+              for machine learning, predictive modeling, and data-driven storytelling. I specialize in building
+              end-to-end ML pipelines — from raw data ingestion and cleaning through feature engineering,
+              model training, evaluation, and deployment.
+            </p>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <p class="about-para">
+              As a <strong>Kaggle Notebook Expert</strong>, I regularly publish well-documented notebooks that
+              break down complex ML concepts into digestible, reproducible workflows. My toolkit spans Python,
+              TensorFlow, Scikit-learn, SQL, Flask/FastAPI, and cloud basics on AWS &amp; GCP — giving me
+              the full stack to take a model from research to production.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="reveal reveal-delay-2">
+            <div class="edu-title"><i class="fas fa-university" style="color:var(--primary-mid);margin-right:8px;"></i>Education</div>
+            <div class="edu-timeline">
+              <div class="edu-item">
+                <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+                <div>
+                  <div class="edu-degree">BS Software Engineering</div>
+                  <div class="edu-school">Your University Name</div>
+                </div>
+                <div class="edu-year">2021 – Present</div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-icon"><i class="fas fa-school"></i></div>
+                <div>
+                  <div class="edu-degree">Intermediate (Pre-Engineering)</div>
+                  <div class="edu-school">Your College Name</div>
+                </div>
+                <div class="edu-year">2019 – 2021</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlights -->
+          <div class="reveal reveal-delay-3">
+            <div class="edu-title"><i class="fas fa-star" style="color:var(--primary-mid);margin-right:8px;"></i>What I Bring</div>
+            <div class="highlights-grid">
+              <div class="highlight-chip"><i class="fas fa-robot"></i> ML Model Building</div>
+              <div class="highlight-chip"><i class="fas fa-chart-line"></i> Data Visualization</div>
+              <div class="highlight-chip"><i class="fas fa-brain"></i> Deep Learning</div>
+              <div class="highlight-chip"><i class="fab fa-kaggle"></i> Kaggle Notebooks</div>
+              <div class="highlight-chip"><i class="fas fa-flask"></i> Model Deployment</div>
+              <div class="highlight-chip"><i class="fas fa-database"></i> ETL Pipelines</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Work With</span>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <p class="section-subtitle">A full-stack data science toolkit — from raw data to production-ready models.</p>
+      </div>
+
+      <!-- Animated progress bars for core skills -->
+      <div class="skills-bars-grid">
+        <div class="skill-bar-item reveal">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-bar-pct">92%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-bar-item reveal reveal-delay-1">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name"><i class="fas fa-robot"></i> Machine Learning</span>
+            <span class="skill-bar-pct">88%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item reveal reveal-delay-2">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name"><i class="fas fa-brain"></i> Deep Learning</span>
+            <span class="skill-bar-pct">80%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item reveal reveal-delay-3">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name"><i class="fas fa-database"></i> SQL</span>
+            <span class="skill-bar-pct">85%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item reveal">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name"><i class="fas fa-chart-bar"></i> Data Visualization</span>
+            <span class="skill-bar-pct">87%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="87"></div></div>
+        </div>
+        <div class="skill-bar-item reveal reveal-delay-1">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name"><i class="fas fa-server"></i> Model Deployment</span>
+            <span class="skill-bar-pct">75%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <!-- Skill category cards -->
+      <div class="skills-categories">
+
+        <div class="skill-category-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+            <div class="skill-cat-title">Languages &amp; Core</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Statistics</span>
+            <span class="skill-tag">Linear Algebra</span>
+            <span class="skill-tag">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
+            <div class="skill-cat-title">ML &amp; Deep Learning</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Keras</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">Feature Eng.</span>
+            <span class="skill-tag">Model Eval.</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card reveal reveal-delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="skill-cat-title">Data &amp; Visualization</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">Plotly</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">EDA</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card reveal reveal-delay-3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-rocket"></i></div>
+            <div class="skill-cat-title">Deployment &amp; Cloud</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">ETL Pipelines</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">AWS Basics</span>
+            <span class="skill-tag">GCP Basics</span>
+            <span class="skill-tag">Spark</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="section projects" id="projects">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          End-to-end data science projects — from raw data to deployed models &amp; clean insights.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="dl">Deep Learning</button>
+        <button class="filter-btn" data-filter="eda">Data Analysis</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card reveal" data-category="ml">
+          <div class="project-card-top">
+            <div class="project-img project-img--blue">
+              <i class="fas fa-users-slash project-img-icon"></i>
+              <div class="project-img-dots"></div>
+            </div>
+            <div class="project-badges">
+              <span class="project-badge badge--ml">Machine Learning</span>
+              <span class="project-badge badge--hot">🔥 Featured</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Customer Churn Prediction</h3>
+            <p class="project-desc">
+              Built an end-to-end ML pipeline to predict telecom customer churn using
+              ensemble methods. Includes feature engineering, SMOTE for class imbalance,
+              hyperparameter tuning, and a Flask REST API for real-time inference.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Scikit-learn</span>
+              <span class="project-tag">XGBoost</span>
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">SMOTE</span>
+              <span class="project-tag">Pandas</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-metric">
+              <span class="metric-val">94%</span>
+              <span class="metric-lbl">Accuracy</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" class="project-link project-link--kaggle" aria-label="Kaggle">
+                <i class="fab fa-kaggle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card reveal reveal-delay-1" data-category="ml">
+          <div class="project-card-top">
+            <div class="project-img project-img--indigo">
+              <i class="fas fa-house-crack project-img-icon"></i>
+              <div class="project-img-dots"></div>
+            </div>
+            <div class="project-badges">
+              <span class="project-badge badge--ml">Machine Learning</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">House Price Prediction</h3>
+            <p class="project-desc">
+              Regression pipeline on the Ames Housing dataset. Deep EDA, 40+ feature
+              engineering transformations, Ridge/Lasso/ElasticNet comparison, and a
+              Stacking ensemble achieving top Kaggle leaderboard performance.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Scikit-learn</span>
+              <span class="project-tag">Feature Eng.</span>
+              <span class="project-tag">Stacking</span>
+              <span class="project-tag">Seaborn</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-metric">
+              <span class="metric-val">0.11</span>
+              <span class="metric-lbl">RMSLE Score</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" class="project-link project-link--kaggle"><i class="fab fa-kaggle"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card reveal reveal-delay-2" data-category="dl">
+          <div class="project-card-top">
+            <div class="project-img project-img--cyan">
+              <i class="fas fa-comment-dots project-img-icon"></i>
+              <div class="project-img-dots"></div>
+            </div>
+            <div class="project-badges">
+              <span class="project-badge badge--dl">Deep Learning</span>
+              <span class="project-badge badge--hot">🔥 Featured</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Sentiment Analysis — NLP</h3>
+            <p class="project-desc">
+              Fine-tuned BERT transformer on Twitter data for multi-class sentiment
+              classification (positive / neutral / negative). Includes text preprocessing,
+              tokenization pipeline, and a FastAPI inference endpoint.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">BERT</span>
+              <span class="project-tag">HuggingFace</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">PyTorch</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-metric">
+              <span class="metric-val">91%</span>
+              <span class="metric-lbl">F1-Score</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" class="project-link project-link--kaggle"><i class="fab fa-kaggle"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card reveal" data-category="eda">
+          <div class="project-card-top">
+            <div class="project-img project-img--green">
+              <i class="fas fa-virus project-img-icon"></i>
+              <div class="project-img-dots"></div>
+            </div>
+            <div class="project-badges">
+              <span class="project-badge badge--eda">Data Analysis</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">COVID-19 EDA Dashboard</h3>
+            <p class="project-desc">
+              Comprehensive exploratory analysis of global COVID-19 trends using
+              Johns Hopkins data. Interactive Plotly visualizations including
+              heatmaps, time-series forecasting with Prophet, and country-level comparisons.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Plotly</span>
+              <span class="project-tag">Prophet</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">EDA</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-metric">
+              <span class="metric-val">50+</span>
+              <span class="metric-lbl">Visualizations</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" class="project-link project-link--kaggle"><i class="fab fa-kaggle"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card reveal reveal-delay-1" data-category="ml">
+          <div class="project-card-top">
+            <div class="project-img project-img--red">
+              <i class="fas fa-credit-card project-img-icon"></i>
+              <div class="project-img-dots"></div>
+            </div>
+            <div class="project-badges">
+              <span class="project-badge badge--ml">Machine Learning</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Credit Card Fraud Detection</h3>
+            <p class="project-desc">
+              Anomaly detection system on a highly imbalanced dataset (0.17% fraud).
+              Implemented Isolation Forest, Autoencoders, and Random Forest with
+              precision-recall optimization. Business-aware threshold tuning for
+              minimal false negatives.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Random Forest</span>
+              <span class="project-tag">Autoencoder</span>
+              <span class="project-tag">SHAP</span>
+              <span class="project-tag">SQL</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-metric">
+              <span class="metric-val">99.2%</span>
+              <span class="metric-lbl">AUC-ROC</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" class="project-link project-link--kaggle"><i class="fab fa-kaggle"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card reveal reveal-delay-2" data-category="dl">
+          <div class="project-card-top">
+            <div class="project-img project-img--purple">
+              <i class="fas fa-eye project-img-icon"></i>
+              <div class="project-img-dots"></div>
+            </div>
+            <div class="project-badges">
+              <span class="project-badge badge--dl">Deep Learning</span>
+              <span class="project-badge badge--hot">🔥 Featured</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Image Classifier — CNN (ResNet)</h3>
+            <p class="project-desc">
+              Transfer learning with ResNet-50 for multi-class image classification.
+              Custom dataset pipeline with augmentation, fine-tuning last layers,
+              Grad-CAM visualizations for model explainability, and Docker deployment.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">TensorFlow</span>
+              <span class="project-tag">ResNet-50</span>
+              <span class="project-tag">Grad-CAM</span>
+              <span class="project-tag">Docker</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-metric">
+              <span class="metric-val">96%</span>
+              <span class="metric-lbl">Test Accuracy</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" class="project-link project-link--kaggle"><i class="fab fa-kaggle"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+
+      <!-- View More CTA -->
+      <div class="projects-more reveal">
+        <p class="projects-more-text">Want to see all notebooks &amp; experiments?</p>
+        <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" class="btn btn-primary">
+          <i class="fab fa-kaggle"></i> View Kaggle Profile
+        </a>
+        <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> View GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact" id="contact">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">
+          Open to internships, freelance projects, research collaborations &amp;
+          full-time Data Science roles. Let's build something great.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: Info column -->
+        <div class="contact-info-col reveal">
+
+          <div class="contact-intro">
+            <div class="contact-intro-icon"><i class="fas fa-satellite-dish"></i></div>
+            <div>
+              <h3 class="contact-intro-title">Always open to new opportunities</h3>
+              <p class="contact-intro-sub">
+                Whether you have a dataset that needs analyzing, a model that needs
+                building, or just want to connect — my inbox is always open.
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact detail cards -->
+          <div class="contact-detail-list">
+
+            <a href="mailto:muhammadhanzlaaltaf@gmail.com" class="contact-detail-card">
+              <div class="contact-detail-icon contact-detail-icon--blue">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <div class="contact-detail-label">Email</div>
+                <div class="contact-detail-value">muhammadhanzlaaltaf@gmail.com</div>
+              </div>
+              <i class="fas fa-arrow-right contact-detail-arrow"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/muhammad-hanzla-17a79237a/" target="_blank" class="contact-detail-card">
+              <div class="contact-detail-icon contact-detail-icon--linkedin">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div>
+                <div class="contact-detail-label">LinkedIn</div>
+                <div class="contact-detail-value">muhammad-hanzla-17a79237a</div>
+              </div>
+              <i class="fas fa-arrow-right contact-detail-arrow"></i>
+            </a>
+
+            <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" class="contact-detail-card">
+              <div class="contact-detail-icon contact-detail-icon--kaggle">
+                <i class="fab fa-kaggle"></i>
+              </div>
+              <div>
+                <div class="contact-detail-label">Kaggle</div>
+                <div class="contact-detail-value">muhammadhanzla1234</div>
+              </div>
+              <i class="fas fa-arrow-right contact-detail-arrow"></i>
+            </a>
+
+            <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" class="contact-detail-card">
+              <div class="contact-detail-icon contact-detail-icon--github">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <div class="contact-detail-label">GitHub</div>
+                <div class="contact-detail-value">muhammadhanzlaaltaf</div>
+              </div>
+              <i class="fas fa-arrow-right contact-detail-arrow"></i>
+            </a>
+
+          </div>
+
+          <!-- Availability badge -->
+          <div class="contact-availability">
+            <span class="avail-dot"></span>
+            <span>Currently available — response within <strong>24 hours</strong></span>
+          </div>
+
+        </div>
+
+        <!-- Right: Contact form -->
+        <div class="contact-form-col reveal reveal-delay-2">
+          <div class="contact-form-card">
+
+            <div class="form-header">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-subtitle">Fill in the details below and I'll get back to you shortly.</p>
+            </div>
+
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Full Name</label>
+                  <div class="form-input-wrap">
+                    <i class="fas fa-user form-input-icon"></i>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address</label>
+                  <div class="form-input-wrap">
+                    <i class="fas fa-envelope form-input-icon"></i>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <div class="form-input-wrap">
+                  <i class="fas fa-tag form-input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="Project collaboration / Internship / Freelance..." />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tell me about your project, dataset, or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                <span id="btn-text">Send Message</span>
+              </button>
+
+              <!-- Success / error feedback -->
+              <div class="form-feedback" id="form-feedback"></div>
+
+            </form>
+          </div>
+        </div>
+
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand col -->
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-box">MH</span>
+            <span class="footer-logo-text">Muhammad Hanzla</span>
+          </a>
+          <p class="footer-tagline">
+            Data Scientist · ML Engineer · Kaggle Expert<br />
+            Turning data into decisions, one model at a time.
+          </p>
+          <div class="footer-social">
+            <a href="https://github.com/muhammadhanzlaaltaf" target="_blank" class="footer-social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.kaggle.com/muhammadhanzla1234" target="_blank" class="footer-social-link" aria-label="Kaggle">
+              <i class="fab fa-kaggle"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-hanzla-17a79237a/" target="_blank" class="footer-social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/m.hanzlaaltaf/" target="_blank" class="footer-social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:muhammadhanzlaaltaf@gmail.com" class="footer-social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home"     class="footer-link"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"    class="footer-link"><i class="fas fa-chevron-right"></i> About</a></li>
+            <li><a href="#skills"   class="footer-link"><i class="fas fa-chevron-right"></i> Skills</a></li>
+            <li><a href="#projects" class="footer-link"><i class="fas fa-chevron-right"></i> Projects</a></li>
+            <li><a href="#contact"  class="footer-link"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Expertise -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Expertise</h4>
+          <ul class="footer-links">
+            <li><a href="#projects" class="footer-link"><i class="fas fa-chevron-right"></i> Machine Learning</a></li>
+            <li><a href="#projects" class="footer-link"><i class="fas fa-chevron-right"></i> Deep Learning</a></li>
+            <li><a href="#projects" class="footer-link"><i class="fas fa-chevron-right"></i> Data Analysis &amp; EDA</a></li>
+            <li><a href="#projects" class="footer-link"><i class="fas fa-chevron-right"></i> NLP &amp; Computer Vision</a></li>
+            <li><a href="#projects" class="footer-link"><i class="fas fa-chevron-right"></i> Model Deployment</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Muhammad Hanzla · Built with
+          <i class="fas fa-heart footer-heart"></i> &amp; lots of
+          <i class="fas fa-coffee"></i> coffee
+        </p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
