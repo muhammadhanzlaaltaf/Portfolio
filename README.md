@@ -1,12 +1,12 @@
-# Muhammad Hanzla — Portfolio Website
+# Muhammad Hanzla — Portfolio 
 
 > Personal portfolio of Muhammad Hanzla, Data Scientist & BS Software Engineering student.
 
-**Live URL:** `https://muhammadhanzlaaltaf.github.io/portfolio`
+**Live URL:** `https://muhammadhanzlaaltaf.github.io/portfolio/`
 
 ---
 
-## 🗂 Project Structure
+## 🗂 portfolio Structure
 
 ```
 portfolio/
@@ -15,12 +15,6 @@ portfolio/
 │   └── style.css           ← All styles (Light White + Deep Blue theme)
 ├── js/
 │   └── main.js             ← Animations, typing, skill bars, filter, form
-└── assets/
-    ├── images/
-    │   └── profile.jpg     
-    └── cv/
-        └── Muhammad_Hanzla_CV.pdf  
-```
 
 
 ## 🛠 Tech Stack
