@@ -42,7 +42,7 @@ function highlightNavLink() {
 
 /* ── 4. Typing animation ── */
 const typingEl = document.getElementById('typing-text');
-const words    = ['Data Scientist', 'ML Engineer', 'Kaggle Expert', 'Deep Learning Dev', 'BS Software Engineer'];
+const words    = ['Data Scientist', 'ML Engineer', 'Kaggle Expert', 'Deep Learning Dev', ' Software Engineer'];
 let   wIndex   = 0, cIndex = 0, deleting = false;
 
 function type() {
